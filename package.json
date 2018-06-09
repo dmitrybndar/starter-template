@@ -1,0 +1,7 @@
+{
+  "name": "start-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "dmitrybondar",
+  "license": "MIT"
+}
