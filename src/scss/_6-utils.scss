@@ -1,0 +1,207 @@
+.posr {
+  position: relative;
+}
+
+.tac {
+  text-align: center;
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.df {
+  display: flex;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.aic {
+  align-items: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcsa {
+  justify-content: space-around;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.order-first {
+  order: -1;
+}
+
+.order-first-sm {
+  @include sm {
+    order: -1;
+  }
+}
+
+.order-first-md {
+  @include md {
+    order: -1;
+  }
+}
+
+.order-first-lg {
+  @include lg {
+    order: -1;
+  }
+}
+
+.order-first-xl {
+  @include xl {
+    order: -1;
+  }
+}
+
+.order-first-xxl {
+  @include xxl {
+    order: -1;
+  }
+}
+
+$gap1-mobile: 20px;
+$gap2-mobile: 25px;
+$gap3-mobile: 50px;
+
+$gap1-desktop: 30px;
+$gap2-desktop: 56px;
+$gap3-desktop: 80px;
+
+.mb-1 {
+  margin-bottom: $gap1-mobile;
+
+  @include md {
+    margin-bottom: $gap1-desktop;
+  }
+}
+
+.mb-2 {
+  margin-bottom: $gap2-mobile;
+
+  @include md {
+    margin-bottom: $gap2-desktop;
+  }
+}
+
+.mb-3 {
+  margin-bottom: $gap3-mobile;
+
+  @include md {
+    margin-bottom: $gap3-desktop;
+  }
+}
+
+.mt-1 {
+  margin-top: $gap1-mobile;
+
+  @include md {
+    margin-top: $gap1-desktop;
+  }
+}
+
+.mt-2 {
+  margin-top: $gap2-mobile;
+
+  @include md {
+    margin-top: $gap2-desktop;
+  }
+}
+
+.mt-3 {
+  margin-top: $gap3-mobile;
+
+  @include md {
+    margin-top: $gap3-desktop;
+  }
+}
+
+.pb-1 {
+  padding-bottom: $gap1-mobile;
+
+  @include md {
+    padding-bottom: $gap1-desktop;
+  }
+}
+
+.pb-2 {
+  padding-bottom: $gap2-mobile;
+
+  @include md {
+    padding-bottom: $gap2-desktop;
+  }
+}
+
+.pb-3 {
+  padding-bottom: $gap3-mobile;
+
+  @include md {
+    padding-bottom: $gap3-desktop;
+  }
+}
+
+.pt-1 {
+  padding-top: $gap1-mobile;
+
+  @include md {
+    padding-top: $gap1-desktop;
+  }
+}
+
+.pt-2 {
+  padding-top: $gap2-mobile;
+
+  @include md {
+    padding-top: $gap2-desktop;
+  }
+}
+
+.pt-3 {
+  padding-top: $gap3-mobile;
+
+  @include md {
+    padding-top: $gap3-desktop;
+  }
+}
+
+.p-1 {
+  padding: $gap1-mobile;
+
+  @include md {
+    padding: $gap1-desktop;
+  }
+}
+
+.p-2 {
+  padding: $gap2-mobile;
+
+  @include md {
+    padding: $gap2-desktop;
+  }
+}
+
+.p-3 {
+  padding: $gap3-mobile;
+
+  @include md {
+    padding: $gap3-desktop;
+  }
+}

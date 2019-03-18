@@ -1,0 +1,40 @@
+@mixin card-hover {
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    transform: scale(1.03);
+    box-shadow: 0 3px 15px rgba(#000, 0.5);
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bg-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+@mixin img-center {
+  position: relative;
+  overflow: hidden;
+
+  img {
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 120%;
+    max-height: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: auto;
+
+    object-fit: cover;
+  }
+}

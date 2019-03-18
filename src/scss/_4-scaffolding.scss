@@ -1,0 +1,113 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+*:focus {
+  outline: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  display: block;
+  position: relative;
+  font-family: $ff-primary;
+  background: #fff;
+  min-width: 320px;
+  color: $dark;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding-top: $nav-mobile;
+  transition: padding-top 0.1s ease-in-out;
+
+  &.scrolled {
+    padding-top: $nav-mobile-scrolled;
+  }
+
+  @include lg {
+    padding-top: $nav-tablet;
+
+    &.scrolled {
+      padding-top: $nav-tablet-scrolled;
+    }
+  }
+
+  @include xl {
+    padding-top: $nav-desktop;
+
+    &.scrolled {
+      padding-top: $nav-desktop-scrolled;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+  }
+
+  &::-webkit-scrollbar:horizontal {
+    height: 11px;
+  }
+
+  &::-webkit-scrollbar:vertical {
+    width: 11px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #a8a8a8;
+    border: 2px solid #fff;
+    border-radius: 8px;
+  }
+}
+
+input,
+textarea {
+  box-shadow: none;
+}
+
+::placeholder {
+  opacity: 1;
+  color: $dark-grey;
+}
+
+:-ms-input-placeholder {
+  color: $dark-grey;
+}
+
+::ms-input-placeholder {
+  color: $dark-grey;
+}
