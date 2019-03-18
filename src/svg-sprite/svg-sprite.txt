@@ -1,0 +1,1 @@
+Place svg files in this folder
