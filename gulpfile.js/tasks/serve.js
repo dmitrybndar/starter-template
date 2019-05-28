@@ -1,6 +1,6 @@
-$.gulp.task('serve', function () {
+$.gulp.task('serve', function() {
   $.bs.init({
-    server: './build',
+    server: { baseDir: './build' },
     notify: false
   });
-})
+});

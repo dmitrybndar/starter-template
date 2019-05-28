@@ -11,21 +11,23 @@ const {
   gulp
 } = $
 
-const doMagic = gulp.parallel('img', 'svg', 'copy', 'html', 'styles', 'scripts', 'vendors');
-
-gulp.task('deploy', gulp.series(
-  'clean',
-  doMagic,
-  'ftp-upload'
-));
+const doMagic = gulp.parallel('img', 'svg', 'copy', 'html', 'styles', 'scripts:build', 'vendors');
 
 gulp.task('build', gulp.series(
   'clean',
-  doMagic,
+  doMagic
 ));
 
-gulp.task('start', gulp.series(
+gulp.task('dev', gulp.parallel('serve', 'watch', 'scripts:watch'));
+
+gulp.task('build', gulp.series(
   'clean',
-  doMagic,
-  gulp.parallel('serve', 'watch'),
+  doMagic
+));
+
+gulp.task('start', gulp.series('build', 'dev'));
+
+gulp.task('deploy', gulp.series(
+  'build',
+  'ftp-upload'
 ));

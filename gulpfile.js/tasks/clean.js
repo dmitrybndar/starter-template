@@ -8,6 +8,7 @@ const {
 gulp.task('clean', function () {
   return gulp.src('./build', {
     read: false,
-    allowEmpty: true
+    allowEmpty: true,
+    force: true
   }).pipe(clean());
 })

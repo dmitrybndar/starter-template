@@ -1,7 +1,7 @@
 process.env.SRC_HTML = './src/html/*.html';
 process.env.SRC_HTML_PARTIALS = './src/html/partials';
-process.env.SRC_JS = './src/js/*.js';
-process.env.SRC_STYLES = './src/scss/styles.scss';
+process.env.SRC_JS = './src/js/index.js';
+process.env.SRC_STYLES = './src/scss/*.scss';
 process.env.SRC_IMG = './src/img/**/*.*';
 process.env.SRC_SVG = './src/svg-sprite/*.svg';
 

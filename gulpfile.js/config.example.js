@@ -4,6 +4,6 @@ module.exports = {
     user: 'username',
     password: 'password',
     port: 21,
-    dest: '/destinationFolder'
+    dest: '/dest-folder'
   },
 };
