@@ -1,11 +1,11 @@
 module.exports = {
   js: [
-     // Babel polyfill
-     'node_modules/@babel/polyfill/dist/polyfill.min.js',
+    // Babel polyfill
+    'node_modules/@babel/polyfill/dist/polyfill.min.js',
     // object-fill for images popyfill
     'node_modules/object-fit-images/dist/ofi.min.js',
-    // Make SVG Sprite work in all browsers 
-    'node_modules/svg4everybody/dist/svg4everybody.min.js',
+    // Make SVG Sprite work in all browsers
+    'node_modules/svg4everybody/dist/svg4everybody.min.js'
     // Select2
     // 'node_modules/select2/dist/js/select2.full.min.js',
     // Google Map Clustering
@@ -21,7 +21,7 @@ module.exports = {
   ],
   css: [
     // Normalize CSS
-    'node_modules/normalize.css/normalize.css',
+    'node_modules/normalize.css/normalize.css'
     // Select2
     // 'node_modules/select2/dist/css/select2.min.css',
     // Slick Slider

@@ -1,11 +1,22 @@
-const {
-  gulp
-} = $;
-const config = require('../config');
+const { gulp } = $;
 const ftp = require('vinyl-ftp');
 const log = require('fancy-log');
 
-gulp.task('ftp-upload', function () {
+let config;
+
+try {
+  config = require('../config');
+} catch (err) {}
+
+gulp.task('ftp-upload', function(done) {
+  if (!config) {
+    console.error(
+      'You must add config.js file with FTP credentials in gulpfile.js folder if you want to use deploy feature'
+    );
+
+    return done();
+  }
+
   const conn = ftp.create({
     host: config.ftp.host,
     user: config.ftp.user,
@@ -25,4 +36,4 @@ gulp.task('ftp-upload', function () {
 
     .pipe(conn.newer(config.ftp.dest)) // only upload newer files
     .pipe(conn.dest(config.ftp.dest));
-})
+});

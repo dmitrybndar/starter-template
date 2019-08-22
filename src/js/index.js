@@ -1,11 +1,11 @@
 // remove preloader
 $(window).on('load', () => {
-  $('#preloader').fadeOut('slow');
+  $('.preloader').fadeOut('slow');
 })
 
 $(document).ready(() => {
   objectFitImages();
   svg4everybody();
 
-  require('./target-blank.js')
+  require('./target-blank.js');
 });
