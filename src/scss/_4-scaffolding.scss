@@ -44,7 +44,7 @@ button {
 body {
   display: block;
   position: relative;
-  font-family: $ff-primary;
+  font-family: $ff-text;
   background: #fff;
   min-width: 320px;
   color: $dark;
@@ -52,46 +52,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  padding-top: $nav-mobile;
-  transition: padding-top 0.1s ease-in-out;
+  // &::-webkit-scrollbar {
+  //   -webkit-appearance: none;
+  // }
 
-  &.scrolled {
-    padding-top: $nav-mobile-scrolled;
-  }
+  // &::-webkit-scrollbar:horizontal {
+  //   height: 11px;
+  // }
 
-  @include lg {
-    padding-top: $nav-tablet;
+  // &::-webkit-scrollbar:vertical {
+  //   width: 11px;
+  // }
 
-    &.scrolled {
-      padding-top: $nav-tablet-scrolled;
-    }
-  }
-
-  @include xl {
-    padding-top: $nav-desktop;
-
-    &.scrolled {
-      padding-top: $nav-desktop-scrolled;
-    }
-  }
-
-  &::-webkit-scrollbar {
-    -webkit-appearance: none;
-  }
-
-  &::-webkit-scrollbar:horizontal {
-    height: 11px;
-  }
-
-  &::-webkit-scrollbar:vertical {
-    width: 11px;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #a8a8a8;
-    border: 2px solid #fff;
-    border-radius: 8px;
-  }
+  // &::-webkit-scrollbar-thumb {
+  //   background-color: #a8a8a8;
+  //   border: 2px solid #fff;
+  //   border-radius: 8px;
+  // }
 }
 
 input,
@@ -100,14 +77,13 @@ textarea {
 }
 
 ::placeholder {
-  opacity: 1;
-  color: $dark-grey;
+  opacity: 0.7;
 }
 
 :-ms-input-placeholder {
-  color: $dark-grey;
+  opacity: 0.7;
 }
 
 ::ms-input-placeholder {
-  color: $dark-grey;
+  opacity: 0.7;
 }

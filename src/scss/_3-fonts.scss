@@ -1,7 +1,21 @@
 // @include font-face(
-//   'HelveticaNeue',
-//   '../fonts/HelveticaNeue/HelveticaNeue',
+//   'FontName',
+//   '../fonts/FontName/FontName-Regular',
+//   null, // font weight
+//   null, // font style
+//   woff2 woff
+// );
+// @include font-face(
+//   'FontName',
+//   '../fonts/FontName/FontName-Bold',
+//   bold,
 //   null,
+//   woff2 woff
+// );
+// @include font-face(
+//   'FontName',
+//   '../fonts/FontName/FontName-Italic',
 //   null,
+//   italic,
 //   woff2 woff
 // );

@@ -1,30 +1,8 @@
-$ff-primary: "Helvetica Neue", -apple-system, BlinkMacSystemFont, Arial, sans-serif;
+$ff-text: 'Arial', sans-serif;
+// $ff-title: 'RotisSerifStd', serif;
 
-$nav-mobile: 75px;
-$nav-mobile-scrolled: 50px;
-
-$nav-tablet: 98px;
-$nav-tablet-scrolled: 60px;
-
-$nav-desktop: 129px;
-$nav-desktop-scrolled: 80px;
-
-$nav-shadow: 0 8px 16px -5px rgba(12, 86, 145, 0.54);
-
-$trs: all 0.2s ease;
+$trs: all 0.3s ease;
 
 // colors
-$accent: #0064b5;
-$accent-light: #3791da;
-$blue: #297fca;
-$dark: #4a4a4a;
-$dark-light: #676767;
-$red: #f01717;
-$grey: #ECECEC;
-$light-grey: #FBFBFB;
-$dark-grey: #9b9b9b;
-
-$flljr: #00a651;
-$fll: #ed1c24;
-$ftc: #f57e25;
-$frc: #009cd7;
+$accent: #333;
+$dark: #000;

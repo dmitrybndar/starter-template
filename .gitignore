@@ -1,7 +1,32 @@
-node_modules
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 package-lock.json
-yarn-error.log
-build
-source-images
+# dependencies
+/node_modules
+/node_modules_bak
+.gitlab-ci.yml
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+yarn-lock.log
+
+.vscode
+
+/source-images
 yarn.lock
+
 gulpfile.js/config.js
+gulpfile.js/config.example.js

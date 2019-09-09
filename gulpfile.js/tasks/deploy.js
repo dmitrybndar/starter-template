@@ -23,7 +23,7 @@ gulp.task('ftp-upload', function(done) {
     password: config.ftp.password,
     port: config.ftp.port,
     log,
-    parallel: 7
+    parallel: 6
   });
 
   // using base = '.' will transfer everything to /public_html correctly
@@ -34,6 +34,6 @@ gulp.task('ftp-upload', function(done) {
       buffer: false
     })
 
-    .pipe(conn.newer(config.ftp.dest)) // only upload newer files
+    .pipe(conn.newerOrDifferentSize(config.ftp.dest)) // only upload newer files
     .pipe(conn.dest(config.ftp.dest));
 });

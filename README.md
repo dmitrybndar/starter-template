@@ -13,5 +13,5 @@ so browserSync serve files directly from build folder and it is the same if you 
 Place static files (e.g. favicons, fonts, etc) to `static` folder. Content of this directory will be copied into build folder.
 
 ## Vendors
-Vendors should be added to *gulpfile.js/vendors-list.js*. 
+Vendors should be installed via `npm` or `yarn` and added to *gulpfile.js/vendors-list.js*. 
 Note! Changes in *vendors-list.js*  will be applied after re-running task.
