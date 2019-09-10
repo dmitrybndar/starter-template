@@ -1,0 +1,94 @@
+$width: 40px;
+$thickness: 5px;
+$height: $thickness * 5;
+$color: #333;
+
+.hamburger-btn {
+  width: $width;
+  height: $height;
+  position: relative;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  background: none;
+  z-index: 100;
+
+  @include lg {
+    display: none;
+  }
+
+  span {
+    display: block;
+    position: absolute;
+    height: $thickness;
+    width: 50%;
+    background: $color;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+
+  span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 $thickness $thickness 0;
+  }
+
+  span:nth-child(odd) {
+    left: 0px;
+    border-radius: $thickness 0 0 $thickness;
+  }
+
+  span:nth-child(1),
+  span:nth-child(2) {
+    top: 0px;
+  }
+
+  span:nth-child(3),
+  span:nth-child(4) {
+    top: $thickness * 2;
+  }
+
+  span:nth-child(5),
+  span:nth-child(6) {
+    top: $thickness * 4;
+  }
+
+  &.opened span:nth-child(1),
+  &.opened span:nth-child(6) {
+    transform: rotate(45deg);
+  }
+
+  &.opened span:nth-child(2),
+  &.opened span:nth-child(5) {
+    transform: rotate(-45deg);
+  }
+
+  &.opened span:nth-child(1) {
+    left: $thickness/2;
+    top: $thickness - 2px;
+  }
+
+  &.opened span:nth-child(2) {
+    left: calc(50% - #{$thickness/2});
+    top: $thickness - 2px;
+  }
+
+  &.opened span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+
+  &.opened span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+  }
+
+  &.opened span:nth-child(5) {
+    left: $thickness/2;
+    top: $thickness * 3 + 1px;
+  }
+
+  &.opened span:nth-child(6) {
+    left: calc(50% - #{$thickness/2});
+    top: $thickness * 3 + 1px;
+  }
+}

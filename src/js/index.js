@@ -6,6 +6,7 @@ $(document).ready(() => {
 
   require('./target-blank.js');
   require('./menu.js');
+  require('./header.js');
 });
 
 // remove preloader

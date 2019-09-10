@@ -9,6 +9,9 @@ module.exports = {
     'node_modules/svg4everybody/dist/svg4everybody.min.js',
     // END OF REQUIRED
 
+    // Lock Body Scroll
+    'node_modules/body-scroll-lock/lib/bodyScrollLock.js'
+
     // FullPage
     // 'node_modules/fullpage.js/dist/jquery.fullpage.extensions.min.js',
     // 'node_modules/fullpage.js/vendors/scrolloverflow.js',
@@ -16,7 +19,7 @@ module.exports = {
 
     // ScrollMagic
     // 'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
-    // 'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js',
+    // 'node_modules/scrollmagic/scrollmagic/minified/plugins/animation.gsap.min.js'
 
     // Select2
     // 'node_modules/select2/dist/js/select2.full.min.js',
@@ -30,16 +33,13 @@ module.exports = {
     // Magnific Popup
     // 'node_modules/magnific-popup/dist/jquery.magnific-popup.js'
 
-    // Lock Body Scroll
-    // 'node_modules/body-scroll-lock/lib/bodyScrollLock.js',
-
     // noUIslider for range controls
     // 'node_modules/nouislider/distribute/nouislider.min.js',
   ],
   css: [
     // REQUIRED
     // Normalize CSS
-    'node_modules/normalize.css/normalize.css',
+    'node_modules/normalize.css/normalize.css'
     // END OF REQUIRED
 
     // FullPage
