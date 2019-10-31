@@ -1,33 +1,39 @@
 .page-header {
-  height: 100px;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 
   &__inner {
     height: inherit;
     background-color: #d8d8d8;
-    padding: 0 15px;
+    padding: 50px 15px;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    transition: transform 1s cubic-bezier(0.19, 1, 0.22, 1),
+      padding 1s cubic-bezier(0.19, 1, 0.22, 1), background-color 0.5s ease;
   }
 
-  &.sticky &__inner {
+  &.scrolled {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-    animation: header-appear .5s ease forwards;
-  }
-}
-
-@keyframes header-appear {
-  0% {
     transform: translateY(-100%);
   }
-  100% {
-    transform: translateY(0%);
+
+  &.scrolled &__inner {
+    padding: 20px 15px;
+  }
+
+  &.scrolled--visible &__inner {
+    transform: translateY(100%);
+    background-color: red;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
+    color: #fff;
+  }
+
+  &.scrolled--visible .main-nav a:not(:hover) {
+    color: #fff;
   }
 }
